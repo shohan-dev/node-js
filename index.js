@@ -4,7 +4,25 @@ const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
-let items = [];
+let items = [
+    // Example item: { id: 1, name: 'Item 1' }
+    {
+        id: 1,
+        name: 'Example Item',
+
+    },
+    {
+        id: 2,
+        name: 'Example Item',
+
+    },
+    {
+        id: 3,
+        name: 'Example Item',
+
+    },
+
+];
 let nextId = 1;
 
 app.get('/items', (req, res) => {
